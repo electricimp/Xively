@@ -17,7 +17,7 @@ class Xively.Client {
 
 	function put(feed){
 		local url = _apiBaseUrl + "feeds/" + feed._feedId + ".json";
-		local headers = { "X-ApiKey" : _apiKey, "Content-Type":"application/json", "User-Agent" : "Xively-Imp-Lib/1.0" };
+		local headers = { "X-ApiKey" : _apiKey, "Content-Type":"application/json", "User-Agent" : "Xively-Imp-Lib/1.0.1" };
 		local request = http.put(url, headers, feed.toJson());
 
 		return request.sendsync();

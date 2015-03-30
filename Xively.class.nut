@@ -88,6 +88,6 @@ class Xively.Channel {
     }
 
     function toJson() {
-    	return http.jsonencode({ _id = this._id, current_value = this._value });
+    	return http.jsonencode({ id = this._id, current_value = this._value });
     }
 }

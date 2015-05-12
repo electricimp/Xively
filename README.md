@@ -11,6 +11,8 @@ In order to push data to Xively, we need to instantiate a Xively.Client object w
 
 **Note** The current implementation of this library makes synchronous requests when *Xively.Client.get()* and *Xively.Client.put()* are called.
 
+**To add this library to your project, add** `#require "Xively.class.nut:1.0.1"` **to the top of your agent code**
+
 ## Xively.Client
 
 ## Constructor: Xively.Client(*apiKey, [baseURL]*)
